@@ -16,19 +16,20 @@
  * beian {string} Chinese policy
  */
 export const site = {
-  title: 'Astro Theme Yi', // required
-  favicon: '/favicon.svg', // required
-  description: 'Welcome to my independent blog website! ',
-  author: "Astro-Yi", // required
-  avatar: '/avatar.png', // required
-  motto: 'Actions speak louder than words.',
-  url: 'https://astro-yi-nu.vercel.app',
+  title: "Joke Heaven", // required
+  favicon: "/favicon.svg", // required
+  description:
+    " A place to share jokes, memes, stories, and clips. Enjoy your stay ! ",
+  author: "hashdotlee", // required
+  avatar: "/avatar.png", // required
+  motto: "Actions speak louder than words.",
+  url: "https://jokeheaven.site",
   recentBlogSize: 5,
   archivePageSize: 25,
   postPageSize: 10,
   feedPageSize: 20,
-  beian: '',
-}
+  beian: "",
+};
 
 /**
  * busuanzi {boolean} link: https://busuanzi.ibruce.info/
@@ -38,10 +39,10 @@ export const site = {
  */
 export const config = {
   busuanzi: false,
-  lang: 'en', // en | zh-cn
-  codeFoldingStartLines: 16 , // Need to re-run the project to take effect
-  ga: false // If you want to integrate with Google Analytics, just enter your GA-ID here.
-}
+  lang: "en", // en | zh-cn
+  codeFoldingStartLines: 16, // Need to re-run the project to take effect
+  ga: false, // If you want to integrate with Google Analytics, just enter your GA-ID here.
+};
 
 /**
  * Navigator
@@ -51,81 +52,106 @@ export const config = {
  * target {string} optional "_self|_blank" open in current window / open in new window
  */
 export const categories = [
+  //{
+  //name: "Blog",
+  //iconClass: "ri-draft-line",
+  //href: "/blog/1",
+  //},
+  //{
+  //name: "Feed",
+  //iconClass: "ri-lightbulb-flash-line",
+  //href: "/feed/1",
+  //},
+  //{
+  //name: "Archive",
+  //iconClass: "ri-archive-line",
+  //href: "/archive/1",
+  //},
+  //{
+  //name: "Message",
+  //iconClass: "ri-chat-1-line",
+  //href: "/message",
+  //},
+  //{
+  //name: "Search",
+  //iconClass: "ri-search-line",
+  //href: "/search",
+  //},
+  //{
+  //name: "More",
+  //iconClass: "ri-more-fill",
+  //href: "javascript:void(0);",
+  //children: [
+  //{
+  //name: 'About',
+  //iconClass: 'ri-information-line',
+  //href: '/about',
+  //},
+  //{
+  //name: 'Friends',
+  //iconClass: 'ri-user-5-line',
+  //href: '/friends',
+  //target: '_self',
+  //},
+  //]
+  //}
   {
-    name: "Blog",
+    name: "Jokes",
     iconClass: "ri-draft-line",
-    href: "/blog/1",
+    href: "/jokes/1",
   },
   {
-    name: "Feed",
+    name: "Memes",
     iconClass: "ri-lightbulb-flash-line",
-    href: "/feed/1",
+    href: "/memes/1",
   },
   {
-    name: "Archive",
+    name: "Stories",
     iconClass: "ri-archive-line",
-    href: "/archive/1",
+    href: "/stories/1",
   },
   {
-    name: "Message",
-    iconClass: "ri-chat-1-line",
-    href: "/message",
+    name: "Clips",
+    iconClass: "ri-video-line",
+    href: "/clips/1",
   },
   {
     name: "Search",
     iconClass: "ri-search-line",
     href: "/search",
   },
-  {
-    name: "More",
-    iconClass: "ri-more-fill",
-    href: "javascript:void(0);",
-    children: [
-      {
-        name: 'About',
-        iconClass: 'ri-information-line',
-        href: '/about',
-      },
-      {
-        name: 'Friends',
-        iconClass: 'ri-user-5-line',
-        href: '/friends',
-        target: '_self',
-      },
-    ]
-  }
-]
+];
 
 /**
  * Personal link address
  */
 export const infoLinks = [
   {
-    icon: 'ri-telegram-fill',
-    name: 'telegram',
-    outlink: 'xxxxxxx',
+    icon: "ri-telegram-fill",
+    name: "telegram",
+    outlink: "xxxxxxx",
   },
   {
-    icon: 'ri-twitter-fill',
-    name: 'twitter',
-    outlink: 'xxxxxxx',
+    icon: "ri-twitter-fill",
+    name: "twitter",
+    outlink: "xxxxxxx",
   },
   {
-    icon: 'ri-instagram-fill',
-    name: 'instagram',
-    outlink: 'xxxxxxx',
+    icon: "ri-instagram-fill",
+    name: "instagram",
+    outlink: "xxxxxxx",
   },
   {
-    icon: 'ri-github-fill',
-    name: 'github',
-    outlink: 'https://github.com/cirry',
+    icon: "ri-github-fill",
+    name: "github",
+    outlink: "https://github.com/cirry",
   },
   {
-    icon: 'ri-rss-fill',
-    name: 'rss',
-    outlink: 'https://astro-yi-nu.vercel.app/rss.xml',
-  }
-]
+    icon: "ri-rss-fill",
+    name: "rss",
+    outlink: "https://astro-yi-nu.vercel.app/rss.xml",
+  },
+];
 
 /**
  * donate
@@ -141,7 +167,7 @@ export const donate = {
   wechatQRCode: "/WeChatQR.png",
   alipayQRCode: "/AliPayQR.png",
   paypalUrl: "https://paypal.me/xxxxxxxxxx",
-}
+};
 
 /**
  * Friendship Links Page
@@ -150,15 +176,14 @@ export const donate = {
  * avatar {string}
  * description {string}
  */
-export const friendshipLinks =
-  [
-    // {
-    //   name: "Cirry's Blog",
-    //   url: 'https://cirry.cn',
-    //   avatar: "https://cirry.cn/avatar.png",
-    //   description: '前端开发的日常'
-    // },
-  ]
+export const friendshipLinks = [
+  // {
+  //   name: "Cirry's Blog",
+  //   url: 'https://cirry.cn',
+  //   avatar: "https://cirry.cn/avatar.png",
+  //   description: '前端开发的日常'
+  // },
+];
 
 /**
  * Comment Feature
@@ -176,12 +201,12 @@ export const friendshipLinks =
 export const comment = {
   enable: false,
   serverUrl: "https://xxxxx.xxxxx.app",
-  lang: 'en',
+  lang: "en",
   pageSize: 20,
-  wordLimit: '',
+  wordLimit: "",
   count: 5,
   pageview: true,
   reaction: true,
   requiredMeta: ["nick", "mail"],
-  whiteList: ['/message/', '/friends/'],
-}
+  whiteList: ["/message/", "/friends/"],
+};
